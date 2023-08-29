@@ -11,13 +11,9 @@ jobs:
       python-version: 3.10.12
   - name: Install dependencies
     run: | 
-<<<<<<< HEAD
      virtualenv test_env
      source ./bin/activate
      pip install pylint
-=======
-     pip3 install pylint
->>>>>>> 9b636b344a8a3adb629dec61701dbad6eea31cd9
      make install
   - name: Lint
     run: |
