@@ -6,4 +6,5 @@ Created on Mon Aug 28 15:33:38 2023
 """
 import api
 
-api.get_fact(1)
+print("hi!")
+#api.get_fact(1)
