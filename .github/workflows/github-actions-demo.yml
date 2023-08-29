@@ -18,9 +18,9 @@ jobs:
     run: |
      pip3 install pylint
      make lint
-  - name: Test
     env: 
-     CI:""
+     CI: ""
+  - name: Test
     run: |
      pip3 install pytest-cov
      make test 
