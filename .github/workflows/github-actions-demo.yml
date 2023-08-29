@@ -11,7 +11,8 @@ jobs:
       python-version: 3.10.12
   - name: Install dependencies
     run: |
-     make install
+    pip install pylint 
+    make install
   - name: Lint
     run: |
      make lint
