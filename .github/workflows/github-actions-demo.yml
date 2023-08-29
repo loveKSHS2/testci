@@ -11,14 +11,13 @@ jobs:
       python-version: 3.9
   - name: Install dependencies
     run: | 
-     pip3 install --upgrade pip wheel setuptools requests
-     pip install pylint
+     pip3 install pylint
      make install
   - name: Lint
     run: |
-     pip install pytest-cov
+     pip3 install pytest-cov
      make lint
   - name: Test
     run: |
-     pip install pytest
+     pip3 install pytest
      make test 
