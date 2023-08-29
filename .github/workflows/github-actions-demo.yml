@@ -15,8 +15,6 @@ jobs:
      source env/bin/activate
      make install
   - name: Lint
-    env: 
-     CI: ""
     run: |
      pip3 install pylint
      make lint
@@ -25,4 +23,5 @@ jobs:
     run: |
      pip3 install pytest-cov
      make test 
-     
+    env: 
+     CI: ""
