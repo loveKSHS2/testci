@@ -24,4 +24,4 @@ jobs:
      pip3 install pytest-cov
      make test 
     env: 
-     CI: ""
+     CI: false
