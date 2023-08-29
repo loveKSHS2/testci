@@ -10,7 +10,7 @@ import requests
 def get_fact(number):
     url = "http://numbersapi.com/{}".format(number)
 
-    r = requests.get(url)
+    r = requests.get(url,timeout=3)
     if r.status_code == 200:
         print(r.text)
     else:
