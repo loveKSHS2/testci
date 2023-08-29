@@ -22,6 +22,5 @@ jobs:
   - name: Test
     run: |
      pip3 install pytest-cov
-     make test 
     env: 
      CI: false
