@@ -20,5 +20,5 @@ jobs:
      make lint
   - name: Test
     run: |
-     pip3 pytest-cov
+     pip3 install pytest-cov
      make test 
