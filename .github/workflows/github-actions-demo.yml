@@ -16,7 +16,6 @@ jobs:
      make install
   - name: Lint
     run: |
-     python3 -m pylint
      make lint
   - name: Test
     run: |
