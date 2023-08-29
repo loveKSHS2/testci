@@ -15,7 +15,7 @@ jobs:
      make install
   - name: Lint
     run: |
-     pip install pytest
+     pip install pytest-cov
      make lint
   - name: Test
     run:
