@@ -19,5 +19,5 @@ jobs:
      make lint
   - name: Test
     run: |
-     pip3 install pytest
+     python3 -m pytest
      make test 
