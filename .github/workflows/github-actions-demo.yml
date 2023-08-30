@@ -4,7 +4,7 @@ jobs:
  build:
   runs-on: ubuntu-22.04
   steps:
-  - uses: actions/checkout@v2
+  - uses: actions/checkout@v2.3.4
   - name: Set Up Python 3.10.12
     uses: actions/setup-python@v1
     with:
@@ -18,7 +18,15 @@ jobs:
     run: |
      pip3 install pylint
      make lint
+    
   - name: Test
     run: |
+<<<<<<< HEAD
      python3 -m pytest-cov
       
+=======
+     pip3 install pytest-cov
+     make test 
+    env: 
+     CI: false
+>>>>>>> ce042e651df069cf73ac27b52d203ddc9fe7d22c
