@@ -21,12 +21,6 @@ jobs:
     
   - name: Test
     run: |
-<<<<<<< HEAD
      python3 -m pytest-cov
       
-=======
-     pip3 install pytest-cov
-     make test 
-    env: 
-     CI: false
->>>>>>> ce042e651df069cf73ac27b52d203ddc9fe7d22c
+
